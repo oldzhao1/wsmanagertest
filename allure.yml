@@ -1,0 +1,5 @@
+options:
+  cucumber:
+    sorting:
+      type: "name"
+      order: "alphabetical"

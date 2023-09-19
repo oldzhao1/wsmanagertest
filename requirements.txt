@@ -1,0 +1,10 @@
+pytest-html
+pytest-xdist
+pytest-ordering
+pytest-rerunfailures
+allure-pytest
+pytest~=7.4.0
+requests~=2.31.0
+PyYAML~=6.0.1
+pytest-base-url
+colorlog~=6.7.0

@@ -1,0 +1,56 @@
+- name: 导购活动新增
+  cases:
+    - case_name: 导购活码新增成功
+      method: post
+      remark: 新增成功
+      path: /gw-scrm/gw-scrm/drainage/contact/create
+      is_run: true
+      data:
+        { code_name: "ws测试",channel_id: 3464413589940928,auto_friend: 1,member_ids: [ 3434222044676736 ],user_ids: [ "zz" ] }
+      extract_key:
+        id: "$.data.ID"
+      expected:
+        200: $.code
+        success: $.message
+
+    - case_name: 导购活码新增失败
+      method: post
+      remark: 名称为空，新增失败
+      path: /gw-scrm/gw-scrm/drainage/contact/create
+      is_run: true
+      data:
+        { code_name: "",channel_id: 3464413589940928",auto_friend: 1",member_ids: [ 3434222044676736 ],user_ids: [ "zz" ] }
+      extract_key:
+      expected:
+        "120003": "$.code"
+        "请求参数有误": "$.message"
+
+- name: 导购活码查询
+  cases:
+    case_name: 导购活码查询成功
+    method: POST
+    remark: 查询成功
+    path: /gw-scrm/gw-scrm/drainage/contact/list
+    is_run: true
+    data:
+      { "name": "ws测试","page": 1,"size": 10 }
+    extract_key:
+    expected:
+      200: $.code
+      success: $.message
+      ws测试: $.data.list[0].code_name
+
+
+- name: 导购活码删除成功
+  cases:
+    case_name: 删除导购活码
+    method: POST
+    remark: 删除成功
+    path: /gw-scrm/gw-scrm/drainage/contact/delete
+    is_run: true
+    data:
+      { "ids": [ "$.id" ] }
+    extract_key:
+    expected:
+      200: $.code
+      success: $.message

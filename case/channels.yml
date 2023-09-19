@@ -1,0 +1,30 @@
+- name: 渠道管理新增
+  cases:
+    - case_name: 渠道新增成功
+      method: post
+      remark: 新增成功
+      path: /gw-scrm/gw-scrm/drainage-contact/channels-create
+      is_run: true
+      data:
+        { "name": "ws测试","label": [ { "label_id": 3456914784468160,"label_group_id": 3456914784400576,"wx_tag_group_id": "etGuURDAAAwKonhxyZbkn0xdrBZ9EnrQ","wx_tag_id": "etGuURDAAAMhbQM9tDjetFFhRKC3y2hg" } ] }
+      extract_key:
+      expected:
+        200: $.code
+        success: $.message
+        true: $.data.result
+
+- name: 渠道管理查询
+  cases:
+    - case_name: 渠道查询成功
+      method: post
+      remark: 查询成功
+      path: /gw-scrm/gw-scrm/drainage-contact/channels-list
+      is_run: true
+      data:
+        { "page": 1,"size": 10,"channel_name": "ws测试" }
+      extract_key:
+      expected:
+        200: $.code
+        success: $.message
+        ws测试渠道: $.data.list[0].name
+
