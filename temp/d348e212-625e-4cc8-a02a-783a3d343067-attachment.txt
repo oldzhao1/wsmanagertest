@@ -1,0 +1,11 @@
+INFO     test:sendrequest.py:25 ------开始运行删除导购活码测试用例------
+INFO     test:patamterset.py:59 读取前的参数池：{'id': 3471385624382656}
+INFO     test:sendrequest.py:28 替换后的入参data为： {'ids': [3471385624382656]}
+INFO     test:yamlutils.py:72 test环境的配置获取成功，domain的值为： https://ws-test.vchangyi.com,headers的值为: {'Content-Type': 'application/json', 'auth-token': 'eyJpdiI6IjU0dVZxVFVCKzZOdkl6REhcL2NlSFZRPT0iLCJ2YWx1ZSI6IjJFZGhTeSsrZVcwOVhKS2FXczdPR1RcLzJIcG5pRnFGbW1kU0VVSHBzQmpKckxrRWVoN3FlamNaTmZXckExdCtUS0tuaWRrSjNcL2hiU2dVTkxWYVhMQ0Jmd0E1Y2NzeGE0N05VNWRvSk9wbmtUbm5rQks1N3cyTk5uajZrNnFBZStOQkZISElHR1hZbWNJYWF0NDBETVJ6dFlaOFVHd0xTK0JyWHNBSnJnXC8xZjhvcEU2K1Iycmc3cloyUEI3REpONTNKZDFcL2gwTFhCMDV0Z1pNcjNmU2tNVU9WXC9BT05NNXpkd3M4SERrenRDXC9kbGZUb1paS2ZCck5ydTJCQXN3V0ZFVnRRdG9rRlVsbmp4ZHRmZ2pSNW9mNFNOMWVUMGlJeldRWFd6UmVSNVl3PSIsIm1hYyI6Ijk3YzA3NWZlZGU2MzY4M2FlNmViYjViYzE4ZTc5MGZkNTUwMmVlNGZjNzE4ZjdkNWYzNThhZmM2YjVmZTA1NmQifQ=='}
+INFO     test:requestutils.py:21 请求的接口地址为： https://ws-test.vchangyi.com/gw-scrm/gw-scrm/drainage/contact/delete
+INFO     test:requestutils.py:22 请求响应结果为： {'code': 200, 'message': 'success', 'request_id': 'fabd3796-695d-4a13-9d32-3579381d336d', 'data': []}
+INFO     test:sendrequest.py:31 需要提取的参数值为： None
+INFO     test:sendrequest.py:54 断言的实际结果为： 200,期望结果为： 200
+INFO     test:sendrequest.py:54 断言的实际结果为： success,期望结果为： success
+INFO     test:sendrequest.py:40 接口请求方式为： POST，测试执行数据为： {'case_name': '删除导购活码', 'method': 'POST', 'remark': '删除成功', 'path': '/gw-scrm/gw-scrm/drainage/contact/delete', 'is_run': True, 'data': {'ids': [3471385624382656]}, 'extract_key': None, 'expected': {200: '$.code', 'success': '$.message'}},请求的入参data为： {'ids': [3471385624382656]},预期结果为： {200: '$.code', 'success': '$.message'}
+INFO     test:sendrequest.py:41 ------运行结束删除导购活码测试用例------

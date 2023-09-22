@@ -1,0 +1,5 @@
+INFO     test:sendrequest.py:25 ------开始运行渠道新增成功测试用例------
+INFO     test:yamlutils.py:72 test环境的配置获取成功，domain的值为： https://ws-test.vchangyi.com,headers的值为: {'Content-Type': 'application/json', 'auth-token': 'eyJpdiI6IjU0dVZxVFVCKzZOdkl6REhcL2NlSFZRPT0iLCJ2YWx1ZSI6IjJFZGhTeSsrZVcwOVhKS2FXczdPR1RcLzJIcG5pRnFGbW1kU0VVSHBzQmpKckxrRWVoN3FlamNaTmZXckExdCtUS0tuaWRrSjNcL2hiU2dVTkxWYVhMQ0Jmd0E1Y2NzeGE0N05VNWRvSk9wbmtUbm5rQks1N3cyTk5uajZrNnFBZStOQkZISElHR1hZbWNJYWF0NDBETVJ6dFlaOFVHd0xTK0JyWHNBSnJnXC8xZjhvcEU2K1Iycmc3cloyUEI3REpONTNKZDFcL2gwTFhCMDV0Z1pNcjNmU2tNVU9WXC9BT05NNXpkd3M4SERrenRDXC9kbGZUb1paS2ZCck5ydTJCQXN3V0ZFVnRRdG9rRlVsbmp4ZHRmZ2pSNW9mNFNOMWVUMGlJeldRWFd6UmVSNVl3PSIsIm1hYyI6Ijk3YzA3NWZlZGU2MzY4M2FlNmViYjViYzE4ZTc5MGZkNTUwMmVlNGZjNzE4ZjdkNWYzNThhZmM2YjVmZTA1NmQifQ=='}
+INFO     test:requestutils.py:21 请求的接口地址为： https://ws-test.vchangyi.com/gw-scrm/gw-scrm/drainage-contact/channels-create
+INFO     test:requestutils.py:22 请求响应结果为： {'code': 160105, 'message': '渠道名称已经存在', 'request_id': 'c2400ff4-c117-4939-b2d9-346e002e131d'}
+INFO     test:sendrequest.py:31 需要提取的参数值为： None

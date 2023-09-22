@@ -1,0 +1,19 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Sep 18 12:48:33 GMT+08:00 2023","Mon Sep 18 12:48:33 GMT+08:00 2023","188","tests","test_guide_drainage_contact","Test","","","渠道查询成功","请求 URL: /gw-scrm/gw-scrm/drainage-contact/channels-list
+请求方法: post
+预期结果: {200: '$.code', 'success': '$.message', 'ws测试渠道': '$.data.list[0].name'}"
+"passed","Mon Sep 18 12:48:31 GMT+08:00 2023","Mon Sep 18 12:48:32 GMT+08:00 2023","841","tests","test_guide_drainage_contact","Test","","","导购活码新增成功","请求 URL: /gw-scrm/gw-scrm/drainage/contact/create
+请求方法: post
+预期结果: {200: '$.code', 'success': '$.message'}"
+"failed","Mon Sep 18 12:48:33 GMT+08:00 2023","Mon Sep 18 12:48:33 GMT+08:00 2023","207","tests","test_guide_drainage_contact","Test","","","渠道新增成功","请求 URL: /gw-scrm/gw-scrm/drainage-contact/channels-create
+请求方法: post
+预期结果: {200: '$.code', 'success': '$.message', True: '$.data.result'}"
+"passed","Mon Sep 18 12:48:32 GMT+08:00 2023","Mon Sep 18 12:48:32 GMT+08:00 2023","189","tests","test_guide_drainage_contact","Test","","","导购活码查询成功","请求 URL: /gw-scrm/gw-scrm/drainage/contact/list
+请求方法: POST
+预期结果: {200: '$.code', 'success': '$.message', 'ws测试': '$.data.list[0].code_name'}"
+"passed","Mon Sep 18 12:48:32 GMT+08:00 2023","Mon Sep 18 12:48:32 GMT+08:00 2023","206","tests","test_guide_drainage_contact","Test","","","导购活码新增失败","请求 URL: /gw-scrm/gw-scrm/drainage/contact/create
+请求方法: post
+预期结果: {'120003': '$.code', '请求参数有误': '$.message'}"
+"passed","Mon Sep 18 12:48:32 GMT+08:00 2023","Mon Sep 18 12:48:33 GMT+08:00 2023","401","tests","test_guide_drainage_contact","Test","","","删除导购活码","请求 URL: /gw-scrm/gw-scrm/drainage/contact/delete
+请求方法: POST
+预期结果: {200: '$.code', 'success': '$.message'}"

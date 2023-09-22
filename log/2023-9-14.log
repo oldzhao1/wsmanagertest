@@ -1,0 +1,13 @@
+[2023-09-14  23:50:35] patamterset.py -> parameter_setting line:35 [INFO] : 参数提取完成后的参数池：{'a': 'sss'}
+[2023-09-14  23:50:35] patamterset.py -> parameter_setting line:35 [INFO] : 参数提取完成后的参数池：{'a': 'sss', 'b': 123}
+[2023-09-14  23:50:35] patamterset.py -> parameter_setting line:35 [INFO] : 参数提取完成后的参数池：{'a': 'sss', 'b': 123, 'c': {'d': 55, 'f': 99}}
+[2023-09-14  23:50:35] patamterset.py -> parameter_setting line:43 [INFO] : 读取前的参数池：{'a': 'sss', 'b': 123, 'c': {'d': 55, 'f': 99}}
+[2023-09-14  23:50:35] patamterset.py -> parameter_setting line:43 [INFO] : 读取前的参数池：{'a': 'sss', 'b': 123, 'c': {'d': 55, 'f': 99}}
+[2023-09-14  23:50:35] patamterset.py -> extract_value line:57 [INFO] : 通过json表达式获取的最终的值为：{'b': 123, 'd': 55}
+[2023-09-14  23:59:01] patamterset.py -> parameter_setting line:35 [INFO] : 参数提取完成后的参数池：{'a': 'sss'}
+[2023-09-14  23:59:01] patamterset.py -> parameter_setting line:35 [INFO] : 参数提取完成后的参数池：{'a': 'sss', 'b': 123}
+[2023-09-14  23:59:01] patamterset.py -> parameter_setting line:35 [INFO] : 参数提取完成后的参数池：{'a': 'sss', 'b': 123, 'c': {'d': 55, 'f': 99}}
+[2023-09-14  23:59:01] patamterset.py -> parameter_setting line:43 [INFO] : 读取前的参数池：{'a': 'sss', 'b': 123, 'c': {'d': 55, 'f': 99}}
+[2023-09-14  23:59:01] patamterset.py -> parameter_setting line:43 [INFO] : 读取前的参数池：{'a': 'sss', 'b': 123, 'c': {'d': 55, 'f': 99}}
+[2023-09-14  23:59:01] patamterset.py -> extract_value line:57 [INFO] : 通过json表达式获取的最终的值为：{'b': 123, 'd': 55}
+[2023-09-14  23:59:42] patamterset.py -> extract_value line:57 [INFO] : 通过json表达式获取的最终的值为：{'b': 123, 'd': 55}

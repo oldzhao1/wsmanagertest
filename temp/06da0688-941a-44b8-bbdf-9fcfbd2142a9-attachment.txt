@@ -1,0 +1,9 @@
+INFO     test:sendrequest.py:25 ------开始运行导购活码新增失败测试用例------
+INFO     test:yamlutils.py:72 test环境的配置获取成功，domain的值为： https://ws-test.vchangyi.com,headers的值为: {'Content-Type': 'application/json', 'auth-token': 'eyJpdiI6IjU0dVZxVFVCKzZOdkl6REhcL2NlSFZRPT0iLCJ2YWx1ZSI6IjJFZGhTeSsrZVcwOVhKS2FXczdPR1RcLzJIcG5pRnFGbW1kU0VVSHBzQmpKckxrRWVoN3FlamNaTmZXckExdCtUS0tuaWRrSjNcL2hiU2dVTkxWYVhMQ0Jmd0E1Y2NzeGE0N05VNWRvSk9wbmtUbm5rQks1N3cyTk5uajZrNnFBZStOQkZISElHR1hZbWNJYWF0NDBETVJ6dFlaOFVHd0xTK0JyWHNBSnJnXC8xZjhvcEU2K1Iycmc3cloyUEI3REpONTNKZDFcL2gwTFhCMDV0Z1pNcjNmU2tNVU9WXC9BT05NNXpkd3M4SERrenRDXC9kbGZUb1paS2ZCck5ydTJCQXN3V0ZFVnRRdG9rRlVsbmp4ZHRmZ2pSNW9mNFNOMWVUMGlJeldRWFd6UmVSNVl3PSIsIm1hYyI6Ijk3YzA3NWZlZGU2MzY4M2FlNmViYjViYzE4ZTc5MGZkNTUwMmVlNGZjNzE4ZjdkNWYzNThhZmM2YjVmZTA1NmQifQ=='}
+INFO     test:requestutils.py:21 请求的接口地址为： https://ws-test.vchangyi.com/gw-scrm/gw-scrm/drainage/contact/create
+INFO     test:requestutils.py:22 请求响应结果为： {'code': 120003, 'message': '请求参数有误', 'request_id': 'fbbc8fa0-4aa5-4669-945e-e253981e984d'}
+INFO     test:sendrequest.py:31 需要提取的参数值为： None
+INFO     test:sendrequest.py:54 断言的实际结果为： 120003,期望结果为： 120003
+INFO     test:sendrequest.py:54 断言的实际结果为： 请求参数有误,期望结果为： 请求参数有误
+INFO     test:sendrequest.py:40 接口请求方式为： post，测试执行数据为： {'case_name': '导购活码新增失败', 'method': 'post', 'remark': '名称为空，新增失败', 'path': '/gw-scrm/gw-scrm/drainage/contact/create', 'is_run': True, 'data': {'code_name': '', 'channel_id': '3464413589940928"', 'auto_friend': '1"', 'member_ids': [3434222044676736], 'user_ids': ['zz']}, 'extract_key': None, 'expected': {'120003': '$.code', '请求参数有误': '$.message'}},请求的入参data为： {'code_name': '', 'channel_id': '3464413589940928"', 'auto_friend': '1"', 'member_ids': [3434222044676736], 'user_ids': ['zz']},预期结果为： {'120003': '$.code', '请求参数有误': '$.message'}
+INFO     test:sendrequest.py:41 ------运行结束导购活码新增失败测试用例------

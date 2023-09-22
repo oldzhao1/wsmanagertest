@@ -1,0 +1,12 @@
+INFO     test:sendrequest.py:25 ------开始运行导购活码新增成功测试用例------
+INFO     test:yamlutils.py:72 test环境的配置获取成功，domain的值为： https://ws-test.vchangyi.com,headers的值为: {'Content-Type': 'application/json', 'auth-token': 'eyJpdiI6IjU0dVZxVFVCKzZOdkl6REhcL2NlSFZRPT0iLCJ2YWx1ZSI6IjJFZGhTeSsrZVcwOVhKS2FXczdPR1RcLzJIcG5pRnFGbW1kU0VVSHBzQmpKckxrRWVoN3FlamNaTmZXckExdCtUS0tuaWRrSjNcL2hiU2dVTkxWYVhMQ0Jmd0E1Y2NzeGE0N05VNWRvSk9wbmtUbm5rQks1N3cyTk5uajZrNnFBZStOQkZISElHR1hZbWNJYWF0NDBETVJ6dFlaOFVHd0xTK0JyWHNBSnJnXC8xZjhvcEU2K1Iycmc3cloyUEI3REpONTNKZDFcL2gwTFhCMDV0Z1pNcjNmU2tNVU9WXC9BT05NNXpkd3M4SERrenRDXC9kbGZUb1paS2ZCck5ydTJCQXN3V0ZFVnRRdG9rRlVsbmp4ZHRmZ2pSNW9mNFNOMWVUMGlJeldRWFd6UmVSNVl3PSIsIm1hYyI6Ijk3YzA3NWZlZGU2MzY4M2FlNmViYjViYzE4ZTc5MGZkNTUwMmVlNGZjNzE4ZjdkNWYzNThhZmM2YjVmZTA1NmQifQ=='}
+INFO     test:requestutils.py:21 请求的接口地址为： https://ws-test.vchangyi.com/gw-scrm/gw-scrm/drainage/contact/create
+INFO     test:requestutils.py:22 请求响应结果为： {'code': 200, 'message': 'success', 'request_id': '941124e8-7f85-4fa2-bc15-6b015bf7b7cb', 'data': {'ID': 3471385624382656}}
+INFO     test:sendrequest.py:31 需要提取的参数值为： {'id': '$.data.ID'}
+INFO     test:patamterset.py:78 通过json表达式获取的最终的值为：{'id': 3471385624382656}
+INFO     test:patamterset.py:42 参数提取完成后的参数池：{'id': 3471385624382656}
+INFO     test:sendrequest.py:35 提取后的参数值为： {'id': 3471385624382656}
+INFO     test:sendrequest.py:54 断言的实际结果为： 200,期望结果为： 200
+INFO     test:sendrequest.py:54 断言的实际结果为： success,期望结果为： success
+INFO     test:sendrequest.py:40 接口请求方式为： post，测试执行数据为： {'case_name': '导购活码新增成功', 'method': 'post', 'remark': '新增成功', 'path': '/gw-scrm/gw-scrm/drainage/contact/create', 'is_run': True, 'data': {'code_name': 'ws测试', 'channel_id': 3464413589940928, 'auto_friend': 1, 'member_ids': [3434222044676736], 'user_ids': ['zz']}, 'extract_key': {'id': '$.data.ID'}, 'expected': {200: '$.code', 'success': '$.message'}},请求的入参data为： {'code_name': 'ws测试', 'channel_id': 3464413589940928, 'auto_friend': 1, 'member_ids': [3434222044676736], 'user_ids': ['zz']},预期结果为： {200: '$.code', 'success': '$.message'}
+INFO     test:sendrequest.py:41 ------运行结束导购活码新增成功测试用例------
